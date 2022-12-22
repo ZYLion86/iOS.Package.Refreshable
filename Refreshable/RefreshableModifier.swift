@@ -53,7 +53,7 @@ struct RefreshableModifier: ViewModifier {
 public extension View {
 	
 	@available(iOS, obsoleted: 15)
-	func refreshable(action: @escaping @Sendable () async -> Void) -> some View {
+	func refresh(action: @escaping @Sendable () async -> Void) -> some View {
 		self.modifier(RefreshableModifier(action: action))
 	}
 }
