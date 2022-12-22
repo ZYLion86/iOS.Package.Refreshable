@@ -52,7 +52,7 @@ struct RefreshableModifier: ViewModifier {
 
 public extension ScrollView {
     @available(iOS, obsoleted: 15)
-    func refresher(action: @escaping @Sendable () async -> Void) -> some View {
+    func refreshable(action: @escaping @Sendable () async -> Void) -> some View {
         self.modifier(RefreshableModifier(action: action))
     }
 }
