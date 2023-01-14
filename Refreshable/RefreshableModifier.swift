@@ -35,7 +35,7 @@ extension EnvironmentValues {
 
 public struct RefreshableModifier: ViewModifier {
 	
-	let action: () async -> Void
+    public let action: () async -> Void
 	
 	public func body(content: Content) -> some View {
 		content
