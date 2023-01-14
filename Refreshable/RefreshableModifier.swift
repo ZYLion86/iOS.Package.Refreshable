@@ -8,11 +8,11 @@
 import SwiftUI
 
 
-struct RefreshAction {
+public struct RefreshAction {
 	
-	let action: () async -> Void
+    public let action: () async -> Void
 	
-	func callAsFunction() async {
+    public func callAsFunction() async {
 		await action()
 	}
 }
