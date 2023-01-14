@@ -37,7 +37,7 @@ public struct RefreshableModifier: ViewModifier {
 	
 	let action: () async -> Void
 	
-	func body(content: Content) -> some View {
+	public func body(content: Content) -> some View {
 		content
 			.environment(\.refresh, RefreshAction(action: action))
 			.onRefresh { refreshControl in
