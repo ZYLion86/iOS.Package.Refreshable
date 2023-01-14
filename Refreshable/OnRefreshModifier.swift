@@ -54,6 +54,9 @@ struct OnListRefreshModifier: ViewModifier {
 			.introspectTableView { tableView in
 				tableView.onRefresh(onValueChanged)
 			}
+            .introspectScrollView { scrollView in
+                scrollView.onRefresh(onValueChanged)
+            }
 	}
 }
 
