@@ -33,7 +33,7 @@ extension EnvironmentValues {
 }
 
 
-struct RefreshableModifier: ViewModifier {
+public struct RefreshableModifier: ViewModifier {
 	
 	let action: () async -> Void
 	
